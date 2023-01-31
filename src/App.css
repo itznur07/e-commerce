@@ -7,6 +7,7 @@
   --color-131921: #131313;
   --color-3b4149: #3b4149;
   --color-f3bd69: #f3bd69;
+  --color-232f3e: #232f3e;
 }
 a {
   display: inline-block;
@@ -22,7 +23,9 @@ a {
 .gap-15 {
   gap: 15px;
 }
-
+.gap-30 {
+  gap: 30px;
+}
 /* Header part here */
 /* header top */
 .header-top-strip {
@@ -31,7 +34,7 @@ a {
 }
 /* header upper */
 .header-upper {
-  background-color: var(--color-3b4149);
+  background-color: var(--color-131921);
 }
 .header-upper .input-group-text {
   background-color: var(--color-f3bd69);
@@ -40,5 +43,20 @@ a {
 .header-upper .header-upper-link img {
   height: 35px;
   width: 35px;
+}
+/* header bottom */
+.header-bottom {
+  background-color: var(--color-232f3e);
+}
+.header-bottom .menu-bottom .menu-link a,
+.menu-bottom .dropdown button {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.3;
+}
+.menu-bottom .dropdown .dropdown-menu .dropdown-item {
+  margin-top: 10px;
 }
 /* Header part here end */

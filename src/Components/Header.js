@@ -1,6 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -74,7 +74,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className='d-flex align-items-center  text-white gap-10' to=''>
+                  <Link
+                    className='d-flex align-items-center  text-white gap-10'
+                    to=''
+                  >
                     <img src='/images/user.svg' alt='img' />
                     <p className='mb-0'>
                       Login <br /> Account
@@ -89,9 +92,67 @@ const Header = () => {
                     <img src='/images/cart.svg' alt='img' />
                     <div className='d-flex align-items-center flex-column'>
                       <span className='badge bg-white text-dark gap-10'>0</span>
-                      <p className="mb-0">$500</p>
+                      <p className='mb-0'>$500</p>
                     </div>
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='header-bottom py-3'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='menu-bottom d-flex align-items-center gap-30'>
+                <div>
+                  <div className='dropdown'>
+                    <span>
+                      <img src='/images/menu.svg' alt='' />
+                    </span>
+                    <button
+                      className='btn btn-secondary dropdown-toggle bg-transparent border-0 shadow-none '
+                      type='button'
+                      id='dropdownMenuButton1'
+                      data-bs-toggle='dropdown'
+                      aria-expanded='false'
+                    >
+                      <span className='me-3 d-inline-block'>
+                        {" "}
+                        Show Categories
+                      </span>
+                    </button>
+                    <ul
+                      className='dropdown-menu'
+                      aria-labelledby='dropdownMenuButton1'
+                    >
+                      <li>
+                        <Link to='' className='dropdown-item'>
+                          Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='' className='dropdown-item'>
+                          Another action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='' className='dropdown-item'>
+                          Something else here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='menu-link'>
+                  <div className='d-flex align-items-center gap-15'>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to=''>Our Store</NavLink>
+                    <NavLink to=''>Blog</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
+                  </div>
                 </div>
               </div>
             </div>
