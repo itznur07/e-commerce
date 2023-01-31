@@ -1,5 +1,18 @@
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --color-131921: #131313;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Header here */
+.header-top-strip {
+  background-color: var(--color-131921);
+}
+/* Header here end */
