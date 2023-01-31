@@ -5,14 +5,40 @@
 }
 :root {
   --color-131921: #131313;
+  --color-3b4149: #3b4149;
+  --color-f3bd69: #f3bd69;
 }
 a {
   display: inline-block;
   text-decoration: none;
 }
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
 
-/* Header here */
+/* Header part here */
+/* header top */
 .header-top-strip {
+  border-bottom: 1px solid --color-3b4149;
   background-color: var(--color-131921);
 }
-/* Header here end */
+/* header upper */
+.header-upper {
+  background-color: var(--color-3b4149);
+}
+.header-upper .input-group-text {
+  background-color: var(--color-f3bd69);
+  cursor: pointer;
+}
+.header-upper .header-upper-link img {
+  height: 35px;
+  width: 35px;
+}
+/* Header part here end */
