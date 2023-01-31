@@ -26,7 +26,9 @@ a {
 .gap-30 {
   gap: 30px;
 }
-/* Header part here */
+/*------------
+ Header part here 
+ ------------------*/
 /* header top */
 .header-top-strip {
   border-bottom: 1px solid --color-3b4149;
@@ -59,4 +61,17 @@ a {
 .menu-bottom .dropdown .dropdown-menu .dropdown-item {
   margin-top: 10px;
 }
-/* Header part here end */
+/* --------------
+Header part end here
+------------------- */
+
+/* ------------
+Footer part
+--------------- */
+footer {
+  background-color: var(--color-232f3e);
+}
+
+/*---------
+ Footer part end here 
+ ---------------*/
