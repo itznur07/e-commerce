@@ -9,6 +9,7 @@
   --color-f3bd69: #f3bd69;
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
 }
 a {
   display: inline-block;
@@ -143,6 +144,13 @@ footer {
   color: var(--color-131921);
   line-height: 22px;
 }
+/* home wrapper 1 end here */
+
+/* home wrapper 2 */
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+}
+/* home wrapper 2 end here */
 /*--------------
   Home page part end here 
   ---------*/

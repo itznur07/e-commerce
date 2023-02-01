@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
+      {/* home wrapper 1 here */}
       <section className='home-wrapper-1 py-5'>
         <div className='container-xxl'>
           <div className='row'>
             <div className='col-6'>
-              <div className='main-banner position-relative p-2 '>
+              <div className='main-banner position-relative p-2'>
                 <img
                   src='/images/main-banner-1.jpg'
                   alt='main-img'
@@ -26,7 +27,6 @@ const Home = () => {
             </div>
             <div className='col-6'>
               <div className='d-flex flex-wrap align-items-center justify-content-between'>
-                
                 <div className='small-banner position-relative p-2 '>
                   <img
                     src='/images/catbanner-01.jpg'
@@ -36,7 +36,9 @@ const Home = () => {
                   <div className='small-banner-content'>
                     <h4 className='text-uppercase'>Best Sales</h4>
                     <h5>Laptops Max</h5>
-                    <p>From $595 or <br /> $54 /month. </p>
+                    <p>
+                      From $595 or <br /> $54 /month.{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -49,7 +51,9 @@ const Home = () => {
                   <div className='small-banner-content'>
                     <h4 className='text-uppercase'>New Arrival</h4>
                     <h5>Buy iPad Air</h5>
-                    <p>From $595 or <br /> $54 /month. </p>
+                    <p>
+                      From $595 or <br /> $54 /month.{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -62,7 +66,9 @@ const Home = () => {
                   <div className='small-banner-content'>
                     <h4 className='text-uppercase'>15% off</h4>
                     <h5>Smartwatch 7</h5>
-                    <p>From $595 or <br /> $54 /month. </p>
+                    <p>
+                      From $595 or <br /> $54 /month.{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -75,16 +81,64 @@ const Home = () => {
                   <div className='small-banner-content'>
                     <h4 className='text-uppercase'>Free Engaving</h4>
                     <h5>Airport Max</h5>
-                    <p>From $595 or <br /> $54 /month. </p>
+                    <p>
+                      From $595 or <br /> $54 /month.{" "}
+                    </p>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+      {/* home wrapper 1 end here */}
+      {/* home wrapper 2 here */}
+      <div className='home-wrapper-2 py-5'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='services d-flex align-items-center justify-content-between'>
+                <div className='d-flex gap-15 align-items-center'>
+                  <img src='/images/service.png' alt='services-img' />
+                  <div>
+                    <h6>Free shopping</h6>
+                    <p className="mb-0">From all order over $100</p>
+                  </div>
+                </div>
+                <div className='d-flex gap-15 align-items-center'>
+                  <img src='/images/service-02.png' alt='services-img' />
+                  <div>
+                    <h6>Daily surpaice offect</h6>
+                    <p className="mb-0">Save money 25% of offer</p>
+                  </div>
+                </div>
+                <div className='d-flex gap-15 align-items-center'>
+                  <img src='/images/service-03.png' alt='services-img' />
+                  <div>
+                    <h6>Supports 24/7</h6>
+                    <p className="mb-0">Shop with an expart</p>
+                  </div>
+                </div>
+                <div className='d-flex gap-15 align-items-center'>
+                  <img src='/images/service-04.png' alt='services-img' />
+                  <div>
+                    <h6>Afordable Prices</h6>
+                    <p className="mb-0">Get faction direct price</p>
+                  </div>
+                </div>
+                <div className='d-flex gap-15 align-items-center'>
+                  <img src='/images/service-05.png' alt='services-img' />
+                  <div>
+                    <h6>Secure Payments</h6>
+                    <p className="mb-0">100% Protected Payment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* home wrapper 2 end here */}
     </>
   );
 };
