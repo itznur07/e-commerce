@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from 'react-fast-marquee';
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -213,6 +214,48 @@ const Home = () => {
       </section>
       {/* home wrapper 3 end here */}
 
+      {/* marque wrapper */}
+      <section className="marque-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marque-inner-wrapper card-wrapper p-3 shadow-sm">
+                <Marquee >
+                {/* Marque  */}
+                <div className="d-flex align-items-center gap-40">
+                  <div>
+                    <img src="/images/brand-01.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-02.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-03.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-04.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-05.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-06.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-07.png" alt="brand" />
+                  </div>
+                  <div>
+                    <img src="/images/brand-08.png" alt="brand" />
+                  </div>
+                </div>
+                {/* Marque */}
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* marque wrapper ends here */}
       
     </>
   );

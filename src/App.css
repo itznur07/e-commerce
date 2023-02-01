@@ -29,6 +29,9 @@ a {
 .gap-30 {
   gap: 30px;
 }
+.gap-40 {
+  gap: 40px;
+}
 .button {
   background-color: var(--color-232f3e);
   color: white;
@@ -168,6 +171,12 @@ footer {
   border-bottom: 1px solid var(--color-ededed);
 }
 /* home warpper 3 ends here */
+
+/* Marque wraper */
+.card-wrapper div > div > img {
+  width: 120px;
+}
+/* Marque wraper ends here */
 /*--------------
   Home page part end here 
   ---------*/
