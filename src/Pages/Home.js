@@ -102,35 +102,35 @@ const Home = () => {
                   <img src='/images/service.png' alt='services-img' />
                   <div>
                     <h6>Free shopping</h6>
-                    <p className="mb-0">From all order over $100</p>
+                    <p className='mb-0'>From all order over $100</p>
                   </div>
                 </div>
                 <div className='d-flex gap-15 align-items-center'>
                   <img src='/images/service-02.png' alt='services-img' />
                   <div>
                     <h6>Daily surpaice offect</h6>
-                    <p className="mb-0">Save money 25% of offer</p>
+                    <p className='mb-0'>Save money 25% of offer</p>
                   </div>
                 </div>
                 <div className='d-flex gap-15 align-items-center'>
                   <img src='/images/service-03.png' alt='services-img' />
                   <div>
                     <h6>Supports 24/7</h6>
-                    <p className="mb-0">Shop with an expart</p>
+                    <p className='mb-0'>Shop with an expart</p>
                   </div>
                 </div>
                 <div className='d-flex gap-15 align-items-center'>
                   <img src='/images/service-04.png' alt='services-img' />
                   <div>
                     <h6>Afordable Prices</h6>
-                    <p className="mb-0">Get faction direct price</p>
+                    <p className='mb-0'>Get faction direct price</p>
                   </div>
                 </div>
                 <div className='d-flex gap-15 align-items-center'>
                   <img src='/images/service-05.png' alt='services-img' />
                   <div>
                     <h6>Secure Payments</h6>
-                    <p className="mb-0">100% Protected Payment</p>
+                    <p className='mb-0'>100% Protected Payment</p>
                   </div>
                 </div>
               </div>
@@ -139,6 +139,81 @@ const Home = () => {
         </div>
       </div>
       {/* home wrapper 2 end here */}
+
+      {/* home wrapper 3 here */}
+      <section className='home-wrapper-3 py-5'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='categories shadow-sm d-flex gap-15 flex-wrap align-items-center justify-content-between'>
+
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Headphone</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/headphone.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Smart tv</h5>
+                    <p>15 items</p>
+                  </div>
+                  <img src='/images/tv.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Speaker</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/speaker.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Camera</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/camera.jpg' alt='img' />
+                </div>
+
+                <div className='d-flex align-items-center gap-15'>
+                  <div>
+                    <h5>Accsecories</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/acc.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-15'>
+                  <div>
+                    <h5>Appliences</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/homeapp.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Music</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/headphone.jpg' alt='img' />
+                </div>
+                <div className='d-flex align-items-center gap-30'>
+                  <div>
+                    <h5>Smart tv</h5>
+                    <p>10 items</p>
+                  </div>
+                  <img src='/images/tv.jpg' alt='img' />
+                </div>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* home wrapper 3 end here */}
+
+      
     </>
   );
 };
