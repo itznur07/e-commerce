@@ -43,6 +43,12 @@ a {
   background-color: var(--color-bf4800);
   color: white;
 }
+.section-heading {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
 /*------------
  Header part here 
  ------------------*/
@@ -177,6 +183,17 @@ footer {
   width: 120px;
 }
 /* Marque wraper ends here */
+
+/* Blog wrapper */
+.card-content .c-c-date {
+  font-size: 12px;
+}
+.card-content .c-c-title {
+  color: var(--color-3b4149);
+  font-weight: 700;
+  font-size: 18px;
+}
+/* Blog wrapper ends here */
 /*--------------
   Home page part end here 
   ---------*/

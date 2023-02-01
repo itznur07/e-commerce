@@ -1,6 +1,7 @@
 import React from "react";
-import Marquee from 'react-fast-marquee';
+import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import BlogCard from "../Components/BlogCard";
 
 const Home = () => {
   return (
@@ -147,7 +148,6 @@ const Home = () => {
           <div className='row'>
             <div className='col-12'>
               <div className='categories shadow-sm d-flex gap-15 flex-wrap align-items-center justify-content-between'>
-
                 <div className='d-flex align-items-center gap-30'>
                   <div>
                     <h5>Headphone</h5>
@@ -205,8 +205,6 @@ const Home = () => {
                   </div>
                   <img src='/images/tv.jpg' alt='img' />
                 </div>
-                
-
               </div>
             </div>
           </div>
@@ -215,40 +213,40 @@ const Home = () => {
       {/* home wrapper 3 end here */}
 
       {/* marque wrapper */}
-      <section className="marque-wrapper py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="marque-inner-wrapper card-wrapper p-3 shadow-sm">
-                <Marquee >
-                {/* Marque  */}
-                <div className="d-flex align-items-center gap-40">
-                  <div>
-                    <img src="/images/brand-01.png" alt="brand" />
+      <section className='marque-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div className='col-12'>
+              <div className='marque-inner-wrapper card-wrapper p-3'>
+                <Marquee>
+                  {/* Marque  */}
+                  <div className='d-flex align-items-center gap-40'>
+                    <div>
+                      <img src='/images/brand-01.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-02.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-03.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-04.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-05.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-06.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-07.png' alt='brand' />
+                    </div>
+                    <div>
+                      <img src='/images/brand-08.png' alt='brand' />
+                    </div>
                   </div>
-                  <div>
-                    <img src="/images/brand-02.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-03.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-04.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-05.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-06.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-07.png" alt="brand" />
-                  </div>
-                  <div>
-                    <img src="/images/brand-08.png" alt="brand" />
-                  </div>
-                </div>
-                {/* Marque */}
+                  {/* Marque */}
                 </Marquee>
               </div>
             </div>
@@ -256,7 +254,48 @@ const Home = () => {
         </div>
       </section>
       {/* marque wrapper ends here */}
-      
+
+      {/* blog wrapper */}
+      <section className='blog-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <h3 className="section-heading">Our Latest News</h3>
+            <div className='col-3'>
+              <BlogCard
+                img='/images/blog-1.jpg'
+                date='10,June,2023'
+                title='New Blogs For Developers'
+                desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              />
+            </div>
+            <div className='col-3'>
+              <BlogCard
+                img='/images/blog-1.jpg'
+                date='10,June,2023'
+                title='New Blogs For Developers'
+                desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              />
+            </div>
+            <div className='col-3'>
+              <BlogCard
+                img='/images/blog-1.jpg'
+                date='10,June,2023'
+                title='New Blogs For Developers'
+                desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              />
+            </div>
+            <div className='col-3'>
+              <BlogCard
+                img='/images/blog-1.jpg'
+                date='10,June,2023'
+                title='New Blogs For Developers'
+                desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* blog wrapper ends here */}
     </>
   );
 };
