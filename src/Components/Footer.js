@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -45,6 +46,12 @@ const Footer = () => {
                 </address>
                 <a href="434" className="text-white mt-4 d-block mb-3">+9843 4383 243</a>
                 <a href="434" className="text-white mt-4 d-block mb-3">example@gamil.com</a>
+                <div className="social-link ">
+                  <a className="text-white me-2" href="Facebook"><FaFacebook /></a>
+                  <a className="text-white me-2" href="Facebook"><FaTwitter /></a>
+                  <a className="text-white me-2" href="Facebook"><FaLinkedin /></a>
+                  <a className="text-white me-2" href="Facebook"><FaInstagram /></a>
+                </div>
               </div>
             </div>
             <div className='col-3'>
