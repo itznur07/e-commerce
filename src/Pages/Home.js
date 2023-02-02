@@ -269,6 +269,7 @@ const Home = () => {
               title='Kids Headphone pro..'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$500'
+              altImg = "/images/speaker.jpg"
             />
             <ProductCard
               img='/images/tv.jpg'
@@ -276,6 +277,7 @@ const Home = () => {
               title='Olompyic s10 camera'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$50'
+              altImg = "/images/speaker.jpg"
             />
             <ProductCard
               img='/images/headphone.jpg'
@@ -283,6 +285,7 @@ const Home = () => {
               title='New Blogs For Developers'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$500'
+              altImg = "/images/speaker.jpg"
             />
 
             <ProductCard
@@ -291,6 +294,7 @@ const Home = () => {
               title='New Blogs For Developers'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$100'
+              altImg = "/images/speaker.jpg"
             />
             <ProductCard
               img='/images/speaker.jpg'
@@ -298,6 +302,7 @@ const Home = () => {
               title='New Blogs For Developers'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$80'
+              altImg = "/images/speaker.jpg"
             />
             <ProductCard
               img='/images/acc.jpg'
@@ -305,6 +310,7 @@ const Home = () => {
               title='New Blogs For Developers'
               desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
               price='$10'
+              altImg = "/images/speaker.jpg"
             />
           </div>
         </div>

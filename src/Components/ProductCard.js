@@ -2,13 +2,15 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ img, caption, title, price }) => {
+const ProductCard = ({ img, caption, title, altImg,price }) => {
   return (
     <>
       <div className='col-2'>
         <div className='product-card rounded-2 shadow-sm position-relative'>
           <div className='p-card-img d-flex justify-content-center'>
-            <img className='img-fluid' src={img} alt='' />
+            <img className='normal-img img-fluid ' src={img} alt='' />
+            {/* hover img */}
+            <img className='alt-img img-fluid' src={altImg} alt='' />
           </div>
           <div className='p-card-content p-3'>
             <p className='text-uppercase c-c-date'>{caption}</p>

@@ -206,6 +206,15 @@ footer {
 .p-card-content {
   margin-top: 10px;
 }
+.product-card:hover .p-card-img .normal-img {
+  display: none;
+}
+.p-card-img .alt-img {
+  display: none;
+}
+.product-card:hover .p-card-img .alt-img {
+  display: block;
+}
 .p-card-content .c-c-date {
   font-size: 13px;
   font-weight: 600;
