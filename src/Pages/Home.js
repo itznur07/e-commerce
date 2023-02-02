@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 import BlogCard from "../Components/BlogCard";
+import ProductCard from "../Components/ProductCard";
 
 const Home = () => {
   return (
@@ -255,11 +256,66 @@ const Home = () => {
       </section>
       {/* marque wrapper ends here */}
 
+      {/* Feature wrapper */}
+      <section className='blog-wrapper py-5 home-wrapper-2'>
+        <div className='container-xxl'>
+          <div className='row'>
+            <div>
+              <h3 className='section-heading'>Features Collections</h3>
+            </div>
+            <ProductCard
+              img='/images/headphone.jpg'
+              caption='Hevlles'
+              title='Kids Headphone pro..'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$500'
+            />
+            <ProductCard
+              img='/images/tv.jpg'
+              caption='Sony'
+              title='Olompyic s10 camera'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$50'
+            />
+            <ProductCard
+              img='/images/headphone.jpg'
+              caption='Icon'
+              title='New Blogs For Developers'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$500'
+            />
+
+            <ProductCard
+              img='/images/camera.jpg'
+              caption='Havles'
+              title='New Blogs For Developers'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$100'
+            />
+            <ProductCard
+              img='/images/speaker.jpg'
+              caption='Sony'
+              title='New Blogs For Developers'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$80'
+            />
+            <ProductCard
+              img='/images/acc.jpg'
+              caption='Walton'
+              title='New Blogs For Developers'
+              desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam.'
+              price='$10'
+            />
+          </div>
+        </div>
+      </section>
+      {/* Feature wrapper ends here */}
+
       {/* blog wrapper */}
       <section className='blog-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
           <div className='row'>
-            <h3 className="section-heading">Our Latest News</h3>
+            <h3 className='section-heading'>Our Latest News</h3>
             <div className='col-3'>
               <BlogCard
                 img='/images/blog-1.jpg'
