@@ -1,59 +1,62 @@
-import React from "react";
-import { FaStar } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { FaHeart } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { addToCart, addToWishList } from "../app/reducer/productReducer";
 
-const ProductCard = ({ img, caption, title, altImg,price }) => {
+const ProductCard = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const [showToast, setShowToast] = useState(false);
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(product));
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 1000);
+  };
+
+  const handleAddToWish = () => {
+    dispatch(addToWishList(product));
+  };
+
   return (
-    <>
-      <div className='col-2'>
-        <div className='product-card rounded-2 shadow-sm position-relative'>
-          <div className='p-card-img d-flex justify-content-center'>
-            <img className='normal-img img-fluid ' src={img} alt='' />
-            {/* hover img */}
-            <img className='alt-img img-fluid' src={altImg} alt='' />
+    <div className="w-72 h-full rounded overflow-hidden shadow-md m-4">
+      <Link to={`/product/${product.id}`}>
+        <img
+          className="w-full h-48 object-cover"
+          src={product.img}
+          alt={product.heading}
+        />
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">
+            {product.heading.slice(0, 23)}
           </div>
-          <div className='p-card-content p-3'>
-            <p className='text-uppercase c-c-date'>{caption}</p>
-            <h6 className='c-c-title'>{title}</h6>
-            <div className='reating-star d-flex align-items-center'>
-              <span>
-                <FaStar />
-              </span>
-              <span>
-                <FaStar />
-              </span>
-              <span>
-                <FaStar />
-              </span>
-              <span>
-                <FaStar />
-              </span>
-              <span>
-                <FaStar />
-              </span>
-            </div>
-            <h6 className='c-c-title mt-3'>{price}</h6>
-          </div>
-          {/* favourit list */}
-          <div className='p-card-wish'>
-            <Link to='/'><img src='/images/wish.svg' alt='wish-img'/></Link>
-          </div>
-          {/* side feature */}
-          <div className="p-card-side-feature">
-            <Link to=''>
-              <img src="/images/prodcompare.svg" alt="" />
-            </Link>
-            <Link to=''>
-              <img src="/images/view.svg" alt="" />
-            </Link>
-            <Link to=''>
-              <img src="/images/add-cart.svg" alt="" />
-            </Link>
-          </div>
+          <p className="text-gray-700 text-base">{product.description}</p>
         </div>
+      </Link>
+      <div className="flex items-center justify-between px-5 py-2">
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+          ${product.price}
+        </span>
+        <button
+          onClick={handleAddToCart}
+          className="bg-[#E34E94] hover:bg-[pink] text-white font-bold py-2 px-4 rounded"
+        >
+          Add to Cart
+        </button>
+        {showToast && (
+          <div className="absolute top-0 left-56 z-100 mt-10  p-4 bg-indigo-500 text-white rounded-lg">
+            {product.heading.slice(0, 10)} added to cart!
+          </div>
+        )}
+        <span
+          onClick={handleAddToWish}
+          className="text-xl font-semibold cursor-pointer text-[gray] hover:text-[#E34E94] transition ease-linear duration-200"
+        >
+          <FaHeart />
+        </span>
       </div>
-    </>
+    </div>
   );
 };
-
 export default ProductCard;

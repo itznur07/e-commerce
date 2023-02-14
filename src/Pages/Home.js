@@ -1,8 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
 import BlogCard from "../Components/BlogCard";
 import ProductCard from "../Components/ProductCard";
+import Products from '../Components/Products';
 
 const Home = () => {
   return (
@@ -14,80 +14,56 @@ const Home = () => {
             <div className='col-6'>
               <div className='main-banner position-relative p-2'>
                 <img
-                  src='/images/main-banner-1.jpg'
+                  src='https://img.freepik.com/free-vector/ice-cream-ad-concept_23-2148600190.jpg?w=1060&t=st=1676302413~exp=1676303013~hmac=2fd2a7b326ad66190fb5ff4823183bd6594fe1df1048d1a6c5cd7ece99869a4e'
                   alt='main-img'
                   className='img-fluid rounded-3'
                 />
-                <div className='main-banner-content'>
+                {/* <div className='main-banner-content'>
                   <h4 className='text-uppercase'>Superchanged for pros</h4>
                   <h5>iPad s13+ Pro</h5>
                   <p>From $595 or $54 /month. </p>
                   <Link className='button' to=''>
                     Buy Now
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className='col-6'>
               <div className='d-flex flex-wrap align-items-center justify-content-between'>
                 <div className='small-banner position-relative p-2 '>
                   <img
-                    src='/images/catbanner-01.jpg'
+                    src='https://img.freepik.com/free-vector/realistic-ice-cream-ad-template_52683-63815.jpg?w=1060&t=st=1676302497~exp=1676303097~hmac=ea9c91985ba4ffb8dd4042bb8cb7da1a37b8f453327f864cbce09dfcdcc48fe3'
                     alt='main-img'
                     className='img-fluid rounded-3'
                   />
-                  <div className='small-banner-content'>
-                    <h4 className='text-uppercase'>Best Sales</h4>
-                    <h5>Laptops Max</h5>
-                    <p>
-                      From $595 or <br /> $54 /month.{" "}
-                    </p>
-                  </div>
+                  
                 </div>
 
                 <div className='small-banner position-relative p-2 '>
                   <img
-                    src='/images/catbanner-03.jpg'
+                    src='https://img.freepik.com/free-vector/realistic-ice-cream-ad-background_52683-42900.jpg?w=1060&t=st=1676302595~exp=1676303195~hmac=6b1d36f1b83205261b672654b4c9e227fec87c732f109710d356c9f0a98d4751'
                     alt='main-img'
                     className='img-fluid rounded-3'
                   />
-                  <div className='small-banner-content'>
-                    <h4 className='text-uppercase'>New Arrival</h4>
-                    <h5>Buy iPad Air</h5>
-                    <p>
-                      From $595 or <br /> $54 /month.{" "}
-                    </p>
-                  </div>
+                  
                 </div>
 
                 <div className='small-banner position-relative p-2 '>
                   <img
-                    src='/images/catbanner-02.jpg'
+                    src='https://img.freepik.com/free-vector/realistic-vanilla-chocolate-ice-cream-ad_52683-63910.jpg?w=1060&t=st=1676302620~exp=1676303220~hmac=2211a6858fd9e2d5d8132c85112844ccac52b378d58c673e12d97f06fea05fd0'
                     alt='main-img'
                     className='img-fluid rounded-3'
                   />
-                  <div className='small-banner-content'>
-                    <h4 className='text-uppercase'>15% off</h4>
-                    <h5>Smartwatch 7</h5>
-                    <p>
-                      From $595 or <br /> $54 /month.{" "}
-                    </p>
-                  </div>
+                  
                 </div>
 
                 <div className='small-banner position-relative p-2 '>
                   <img
-                    src='/images/catbanner-04.jpg'
+                    src='https://img.freepik.com/free-vector/realistic-ice-cream-promo_52683-64051.jpg?w=996&t=st=1676302649~exp=1676303249~hmac=2c7aa1429c714ecb478659085f90ab41cecd7b3b8e33926a894bfc0f536e3474'
                     alt='main-img'
                     className='img-fluid rounded-3'
                   />
-                  <div className='small-banner-content'>
-                    <h4 className='text-uppercase'>Free Engaving</h4>
-                    <h5>Airport Max</h5>
-                    <p>
-                      From $595 or <br /> $54 /month.{" "}
-                    </p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -212,7 +188,7 @@ const Home = () => {
         </div>
       </section>
       {/* home wrapper 3 end here */}
-
+      <Products />
       {/* marque wrapper */}
       <section className='marque-wrapper py-5 home-wrapper-2'>
         <div className='container-xxl'>
@@ -358,6 +334,7 @@ const Home = () => {
         </div>
       </section>
       {/* blog wrapper ends here */}
+      
     </>
   );
 };
